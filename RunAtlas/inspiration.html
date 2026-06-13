@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RunAtlas</title>
+        
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+        <header class="top-bar"> 
+            <div class="hamburger-btn" onclick="toggleMenu()">
+                ☰
+            </div>
+            
+            <nav class="main-menu" id="mainMenu">
+                <a href="index.html">Hem</a>
+                <a href="lopp.html">Löparevenemang</a>
+                <a href="inspiration.html">Inspiration</a>
+                <a href="sok.html">Sök</a>
+                <a href="kontakt.html">Kontakt</a>
+            </nav>
+
+            <div class="title">
+                <a href="index.html">
+                    <h1>RUN ATLAS</h1>
+                    <h2>RUN THE WORLD</h2>
+                </a>
+            </div>
+            
+            <div class="help-menu-container">
+                <button class="help-menu-btn" onclick="toggleHelpMenu()">
+                    HJÄLPMENY
+                </button>
+
+                <div class="help-menu" id="helpMenu">
+                    <button>Svenska</button>
+                    <button>Engelska</button>
+                    <button>Lättläst</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Huvudinnehåll --> 
+        <main> 
+            <div class="hero-other-pages">
+                <img src="run9.jpg" alt="Löpare sträcker upp armarna i glädje">
+                <img src="run8.jpg" alt="Medaljer på ett bord"> 
+                <img src="run1.jpg" alt="Löpare samlade vid startlinjen inför ett lopp">
+            </div>
+
+
+            <!-- Sidans innehåll -->
+            <!-- Designen liknar "lopp.html", men med annan struktur -->
+            <div class="inspiration-content">
+
+                <!-- Textinnehåll med inspiration och information -->
+                <div class="inspiration-text">
+                    <h3>INSPIRATION OCH INFORMATION</h3>
+                    <p>Här hittar du motivation, tips och inspiration för din löpning.
+                    Löpning är mer än bara träning. Det är en paus från vardagen, en stund för sig själv
+                    där tankarna får vandra fritt och kroppen arbeta i sin egen takt. Du behöver inte vara snabb, stark eller erfaren.
+                    Det enda som krävs är att du börjar.</p>
+
+                    <p>Varje steg du tar bygger något större, men oavsett anledning är 
+                    löpning en resa där varje kilometer räknas.</p>
+                    <p>Din resa börjar med ett steg. Ta det idag.</p>
+                </div>
+
+                <!-- Navigationsknappar (ej interaktiva enligt flödesschema) -->
+                <div class="inspiration-buttons">
+                    <button class="btn" type="button">LÅT DIG INSPIRERAS</button>
+                    <button class="btn" type="button">TIPS</button>
+                    <button class="btn" type="button">INFORMATION</button>
+                </div>
+            </div>
+        </main> 
+
+        <footer class="site-footer">
+            <div class="footer-title">
+                <h3>RUN ATLAS</h3>
+                <h4>RUN THE WORLD</h4>
+            </div>
+
+            <div class="footer-links">
+                <h4>QUICK LINKS</h4>
+                <a href="index.html">Hem</a>
+                <a href="lopp.html">Löparevenemang</a>
+                <a href="inspiration.html">Inspiration</a>
+                <a href="sok.html">Sök</a>
+                <a href="kontakt.html">Kontakt</a>   
+            </div>
+
+            <div class="footer-information">
+                <h4>INFORMATION</h4>
+                <a href="#">Om sidan</a>
+                <a href="#">FAQ</a>
+            </div>
+
+            <div class="footer-contact">
+                <h4>KONTAKTA OSS</h4>
+                <p>Email: info.runatlas@löpning.se</p>
+                <p>Tel: 070-123 45 67</p>   
+            </div>
+
+            <div class="footer-bottom">
+                <p>Alla bilder kommer från Pixabay med fria användningslicenser eller är tagen själv.</p>
+                <p>RunAtlas | 2026</p>
+            </div>
+        </footer>
+
+        <script>
+        function toggleMenu() {
+            document.getElementById("mainMenu")
+            .classList.toggle("show");
+        }
+
+        function toggleHelpMenu() {
+            document.getElementById("helpMenu")
+            .classList.toggle("show");
+        }
+        </script>
+    </body> 
+</html>
